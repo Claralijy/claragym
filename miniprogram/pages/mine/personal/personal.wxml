@@ -1,0 +1,77 @@
+<!--pages/personal/personal.wxml-->
+
+<view class="container">
+  <!--未登录-->
+    <view class="load" wx:if="{{!loginOk}}">
+      <image src="../../../images/avatar/tourist.png" bindtap="load"></image>
+      <text class="clickload" bindtap="load">点击登录</text>
+    </view>
+    <!--已登录-->
+    <view wx:else>
+      <view class="load" >
+        <image src="{{avatarUrl}}" ></image>
+        <text class="clickload" >{{nickName}}</text>
+      </view>
+      <text class="exit" bindtap="exit">退出</text>
+    </view>
+
+    <!-- ****跑马灯**** -->
+    <van-notice-bar left-icon="volume-o"  scrollable text="{{notice}}"/>
+    <text>{{notice.content}}</text>
+
+    <!-- ****菜单列表**** -->
+    <view class="menu">
+      <view class="menuTitle">
+          <view class="menuTitle_text">菜单列表</view>
+      </view>
+      <view class="menuList" bindtap="punched">
+          <view class="li" >
+           <icon class="iconfont icon-gerenzhongxin"/>
+           <text class="menuList_text">每日打卡</text> 
+          </view>
+      </view> 
+      <view class="menuList" bindtap="xxxx">
+          <view class="li" >
+           <icon class="iconfont icon-shenqing"/>
+           <text class="menuList_text">身体数据</text> 
+          </view>
+      </view>
+      <view class="menuList" bindtap="myBooking">
+          <view class="li" >
+           <icon class="iconfont icon-daishenhe"/>
+           <text class="menuList_text">我的预约</text> 
+          </view>
+      </view>    
+      <view class="menuList" bindtap="cartlist">
+          <view class="li" >
+           <icon class="iconfont icon-gouwudai"/>
+           <text class="menuList_text">购物车</text> 
+          </view>
+      </view>  
+      <view class="menuList" bindtap="orderlist">
+          <view class="li" >
+           <icon class="iconfont icon-dingdan"/>
+           <text class="menuList_text">我的订单</text> 
+          </view>
+      </view>  
+      <view class="menuList">
+        <button class="li" open-type="contact">
+              <icon class="iconfont icon-kefu"/> <text class="menuList_text">联系客服</text> 
+        </button>
+      </view>
+     
+          
+    </view>
+   
+    
+</view>  
+
+
+<!-- <view  class="marquee_container solid-bottom margin-top">
+      <view class="cuIcon-oticefill text-black"></view><view class="marquee_text;">充值钱包更优惠！</view> 
+</view> -->
+
+
+
+
+

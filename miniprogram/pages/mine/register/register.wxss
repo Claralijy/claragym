@@ -1,0 +1,46 @@
+/* pages/login/login.wxss */
+page{
+  background-color: #fff;
+}
+.reg{width: 100%;border-top: 1px solid #eeeeee;padding-bottom: 50rpx;}
+.reg-m{width: 90%;margin: 0 auto;}
+.clear{clear: both;}
+.reg-m-k{width: 100%;border-bottom: 1px solid #eeeeee;padding-bottom: 10rpx;margin-top: 30rpx;}
+.reg-m-k span{width: 100%;font-size: 30rpx;color: #434343;line-height: 70rpx;display: inline-block;}
+.reg-m-k span label{color: red;}
+.reg-m-k input{width: 50%;float: left;font-size: 28rpx;height: 60rpx;line-height: 60rpx;}
+.reg-m-ks{width: 100%;margin-top: 30rpx;}
+.reg-m-ks span{width: 30%;font-size: 30rpx;color: #434343;line-height: 70rpx;float: left;text-align: right;}
+.reg-m-ks span label{color: red;}
+.reg-m-ks input{width: 50%;font-size: 28rpx;line-height: 60rpx;height: 60rpx;float: left;border-bottom: 1px solid #eeeeee;margin-left: 2%;}
+
+.btnL{width: 80%;font-size: 30rpx;color: #fff;background: #63F53C;line-height: 80rpx;height: 80rpx;margin-top: 80rpx;display: inline-block;margin-left: 60rpx;}
+button::after{border: none;}
+.titlep{width: 100%;text-align: center;display: inline-block;line-height: 250rpx;font-size: 40rpx;}
+.clicklog{
+  font-size: 28rpx;
+  color: blue;
+  margin:20rpx 110rpx;
+  text-decoration: underline;
+}
+
+
+/* .code {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.code .left {
+  font-family: Arial;
+  font-style: italic;
+  font-weight: bold;
+  border: 0;
+  letter-spacing: 3px;
+  font-size: 18px;
+  background-color: #ccc;
+  padding: 10rpx;
+  margin-right: 20rpx;
+  color: blue;
+} */

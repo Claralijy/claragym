@@ -1,0 +1,71 @@
+<view>
+  <van-cell-group>
+  <van-field
+    value="{{ bookingName }}"
+    name="name"
+    bind:change="onBookingName"
+    label="会员姓名"
+    placeholder="请输入您的姓名"
+    size="large"
+    maxlength="10"
+    clearable
+
+  />
+  <van-field
+    value="{{ phone }}"
+    name="phone"
+    bind:change="onPhone"
+    label="联系电话"
+    placeholder="请输入联系电话"
+    size="large"
+    type="number"
+    maxlength="11"
+    clearable
+  /> 
+  <van-field
+    value="{{ title }}"
+    label="预约课程"
+    readonly
+    size="large"
+  />
+  <van-field
+    value="{{ time }}"
+    label="预约时间"
+    readonly
+    size="large"
+  />
+  <van-field
+    value="{{ coachName }}"
+    label="预约教练"
+    readonly
+    size="large"
+  />
+  <van-field
+    value="{{ courseType }}"
+    label="课程类型"
+    readonly
+    size="large"
+  />
+  <van-field
+    value="￥{{ coursePrice }}"
+    label="课程费用"
+    readonly
+    size="large"
+  />
+  <van-field
+    value="{{ tip }}"
+    bind:change="onTip"
+    label="备注"
+    size="large"
+    clearable
+    maxlength="50"
+    show-word-limit="true"
+  />
+</van-cell-group>
+       <!-- 预约 -->
+      <view class="orderCoach">
+        <van-button class="orderBtn" bind:tap="myBooking" round type="primary"  color="linear-gradient(to right, #ffb95d, #f35134)" >
+        <span style="font-size: 35rpx;">预约</span>
+        </van-button>
+      </view>
+</view>

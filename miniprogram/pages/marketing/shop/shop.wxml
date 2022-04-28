@@ -1,0 +1,42 @@
+<!--pages/zx/zx.wxml-->
+<view class="container">   
+    <!-- 导航栏 -->
+    <view class="navigation">
+        <block wx:for="{{shop}}" wx:key = "index">
+            <view wx:for="{{item.list}}" class="navFood {{currentTab==index?'active':''}}"
+             bindtap="changeNav" data-currentab="{{index}}">{{item.name}}</view>
+        </block>
+    </view>  
+    <!-- 商品列表 -->
+    <view class="content"> 
+        <scroll-view scroll-y="true" style="height:82vh">
+          <block wx:for="{{shop}}" wx:key = "index" wx:if="{{currentab == item.id}}" >
+            <view class="food" bindtap="shopDetail" data-id="{{item._id}}"> 
+                <image src="{{item.image}}" />
+                <view class="mes">
+                    <text class="foodName">{{item.title}}</text>
+                    <text class="foodIntroduce">{{item.introduce}}</text>
+                    <view class="special">特价</view>
+                    <p>￥{{item.price}}</p>
+                    <view class="btn" bindtap="ordinInCart" data-id="{{item.id}}" data-stock="{{item.stock}}" >
+                            <!-- <icon type="{{item.selected ? 'success' : 'circle'}}" color="#23a3ff" size="30"></icon> -->
+                    </view>
+                </view>
+                
+            </view>
+  
+         </block>
+    </scroll-view>
+    </view> 
+ 
+<!-- <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
+    <block wx:for="{{shopList}}" wx:key="index">
+    <van-sidebar-item data-id="{{item._id}}" >
+        <view slot='title'>
+            <view>{{item.name}}</view>
+        </view>
+    </van-sidebar-item>
+    </block>
+</van-sidebar> -->
+
+</view>

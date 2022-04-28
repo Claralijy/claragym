@@ -1,0 +1,16 @@
+<!--pages/mine/myBooking/myBooking.wxml-->
+<view class="container">
+  <van-cell-group custom-class="van-box" wx:for="{{orderCenter}}">
+  <van-cell title-class="title-style" center title="我的预约" size="large" value="" border="{{ true }}" />
+  <van-cell title="会员姓名" value="{{item.username}}" border="{{ false }}" />
+  <van-cell title="联系电话" value="{{item.userphone}}" border="{{ false }}" />
+  <van-cell title="预约课程" value="{{item.title}}" border="{{ false }}" />
+  <van-cell title="预约时间" value="{{item.time}}" border="{{ false }}" />
+  <van-cell title="预约教练" value="{{item.coachName}}" border="{{ false }}" />
+  <van-cell title="课程类型" value="{{item.courseType}}" border="{{ false }}" />
+  <van-cell title="课程价格" value="￥{{item.coursePrice}}" border="{{ false }}" />
+  <van-cell title="会员备注" label="{{item.tip}}" border="{{ false }}" />
+  <van-button class="cancel" type="default" block bind:tap="cancelTap">取消预约</van-button>
+  </van-cell-group>
+ 
+</view>

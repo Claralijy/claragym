@@ -1,0 +1,4 @@
+<!--pages/coach/coach.wxml-->
+<block wx:for="{{accountList}}" data-id="index">
+  <view class="" >用户{{item.index}}:{{item.username}}</view>
+</block>

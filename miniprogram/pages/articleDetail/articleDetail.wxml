@@ -1,0 +1,75 @@
+<!--miniprogram/pages/detailPage.wxml-->
+
+<view class="container" >
+
+<!-- ****文章标题**** -->
+  <view class="">
+    <view class="">
+      <view class="head">
+          <view class="title">{{title}}</view>
+          <text class="source">来源：{{nickname}}</text>
+          <text class="time">时间：{{time}}</text>
+      </view>
+    </view>
+  </view>
+<!--****图片**** -->
+  <view class="cont">
+    <view class="img_box{">
+      <image class="img" src="{{image}}" show-menu-by-longpress mode="widthFix" ><view class="tag">{{tag}}</view></image>
+    </view>
+<!--****文章内容**** -->    
+      <rich-text class="content" nodes="{{contents}}"></rich-text>
+      <view class="state">
+        <i><icon class="iconfont icon-kejian"/></i><text>{{view}}</text>
+        <i><icon class="iconfont {{zan?'icon-dianzan-xuanzhong':'icon-dianzan-moren'}}"  bindtap="like"  /><text>{{like}}</text></i>
+        <!-- <i class="iconfont icon-pinglun"></i><text>{{comment}}</text> -->
+      </view>
+  </view>
+
+ <!-- 评论框 -->
+ <form class="comment">
+  <textarea maxlength="-1" disabled="{{disabled}}" bindinput="textareaAInput" placeholder="请输入您的评论!"></textarea>
+    <button bindtap="comment_submit">发表</button>
+ </form>
+ <!-- 文章发表 -->
+ <view class="comment_send" >
+  <view class="comment_send_avatar">
+    头像
+  </view>
+  <view class="comment_send_cont">
+    <view class="cont_name"></view>
+    <view class="cont_cont"></view>
+  </view>
+ </view>
+
+
+<!--****文章评论 **** -->
+<!-- <block wx:if="{{comlength == 0}}">
+  <view class="text-center text-grey padding" style="margin:40rpx auto;">还没有评论</view>
+</block>
+<block wx:for="{{comment}}" wx:key="com" wx:if="{{comlength != 0}}">
+  <view class="cu-list menu-avatar comment solids-top">
+      <view class="cu-item">
+        <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
+        <view class="content">
+          <view class="text-grey">Clara</view>
+          <view class="text-gray text-content text-df">
+            凯尔，你被自己的光芒变的盲目。
+          </view>
+          <view class="margin-top-sm flex justify-between">
+            <view class="text-gray text-df">2021年06月16日</view>
+            <view>
+              <text class="cuIcon-appreciatefill text-red"></text>
+              <text class="cuIcon-messagefill text-gray margin-left-sm"></text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+</block>
+ -->
+
+ </view>
+
+
+

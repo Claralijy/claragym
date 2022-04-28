@@ -1,0 +1,131 @@
+/* pages/shop/shop.wxss */
+page{
+    background: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.navigation{
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    color: #fff;
+    background-color: rgb(235, 233, 233);
+}
+
+.navigation .navFood{
+    width: 100%;
+    height: 100rpx;
+    font-size: 30rpx;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.548);
+    line-height: 100rpx;
+    /* border-right: 1rpx solid rgb(185, 182, 182); */
+}
+.active{
+    color:#98ca23;
+    background-color: white;
+}
+.content{
+    width: 75%;
+    height: 100vh;
+    /* background-color: sandybrown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 1rpx;
+}
+.content .food{
+    width: 100%;
+    height: 200rpx;
+    /* background-color: silver; */
+    border-bottom: 1rpx solid rgb(185, 182, 182);
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rpx;
+}
+.content .food image{
+    width: 30%;
+    height: 180rpx;
+    margin: 10rpx;
+    /* background-color: seagreen; */
+}
+.content .food .mes{
+    width: 65%;
+    height: 200rpx;
+    /* background-color: rgb(157, 189, 190); */
+    position: relative;
+}
+.content .food .mes .foodName{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 32rpx;  
+}
+.content .food .mes .foodIntroduce{
+    position: absolute;
+    top: 50rpx;
+    left: 0;
+    color: rgb(185, 161, 161);
+    font-size: 22rpx;  
+}
+.content .food .mes .special{
+    position: absolute;
+    width: 60rpx;
+    height: 30rpx;
+    border: 2rpx solid  rgb(255, 60, 0);
+    top: 130rpx;
+    left: 0;
+    color: rgb(255, 60, 0);
+    font-size: 25rpx;  
+    line-height: 30rpx;
+    text-align: center;
+}
+.content .food .mes p{
+    position: absolute;
+    top: 130rpx;
+    right: 30rpx;
+    color: rgb(255, 94, 0);
+    font-size: 30rpx;  
+}
+/* .content .food .mes .btn{
+    position: absolute;
+    right: 20rpx;
+    bottom: 10rpx;
+	text-align: right;
+} */
+
+
+.cart{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0; 
+	bottom: 0;
+    padding: 50rpx;
+    background: blanchedalmond;
+    /* color: #e7e7e7; */
+    /* background: #e7e7e7; */
+}
+.cart .total{
+    margin-right: 25rpx;
+}
+.cart button{
+    color: #fff;
+    margin-right: 80rpx;
+    background-color:#98ca23;
+}

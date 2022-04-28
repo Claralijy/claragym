@@ -1,0 +1,38 @@
+<!--pages/login/login.wxml-->
+<view class="reg">
+	<view class="reg-m">
+		<p class="titlep">用户注册</p>
+		<view class="reg-m-ks">
+			<span>账号：</span>
+			<input type="text" placeholder="请输入账号" name="account" bindinput="getAccount"></input>
+			<view class="clear"></view>
+		</view>
+		<view class="reg-m-ks">
+			<span>密码：</span>
+			<input placeholder="请输入密码" password="true" name="password" bindinput="getPwd"></input>
+			<view class="clear"></view>
+		</view>
+		<view class="clicklog" bindtap="navLog">点击这里登录</view>
+    <!-- <view class="reg-m-ks">
+			<span>验证码：</span>
+			<input placeholder="验证码" value="{{code}}" name="code" bindinput="getcode"></input>
+			<view class="clear"></view>
+		</view>
+    <view class='code'>
+      <text class='left'>{{code}}</text>
+      <text class='right' bindtap='change'>换一张</text>
+    </view> -->
+		<button class="btnL" bindtap="regClick">注册</button>
+		<!-- <button class="btnR" bindtap="btnClick">登录</button> -->
+	</view>
+</view>
+
+
+
+
+
+<view>
+
+
+
+</view>

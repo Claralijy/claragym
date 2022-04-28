@@ -1,0 +1,10 @@
+/* pages/reservation/coachInfo/coachInfo.wxss */
+.orderCoach{
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+}
+.orderBtn > button{
+  width: 440rpx;
+ /* background-color: linear-gradient(to right, #ffb95d, #f35134); */
+}

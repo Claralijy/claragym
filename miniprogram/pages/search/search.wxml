@@ -1,0 +1,20 @@
+<!--pages/search/search.wxml-->
+<view class="search_container">
+  <!-- ****搜索栏**** -->
+    <van-search
+      value="{{ value }}"
+      placeholder="请输入搜索关键词"
+      use-action-slot
+      bind:change="searchOnChange"
+    >
+    <view slot="action" bindtap="onClick">搜索</view>
+    </van-search>
+  <view class="search_content" wx:for="{{articleList}}" wx:key="index" data-id="{{item._id}}" bindtap="artiDetail">
+    <image class="search_content_img" src="{{item.avatar}}">
+    </image>
+    <view class="search_content_right">
+      <view class="right_title">{{item.title}}</view>
+      <view class="right_cont">{{item.profile}}</view>
+    </view>
+  </view>
+</view>

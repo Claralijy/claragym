@@ -1,0 +1,30 @@
+<view class="banner">
+    <swiper bindchange="cardSwiper" indicator-dots circular autoplay interval="6000" duration="500" indicator-color="#ccc" indicator-active-color="#ea986c" class="cardSwiper"> 
+      <block wx:for="{{swiperList}}" wx:key="index">
+        <!-- <navigator url="../../pages/article/article" open-type="navigate" > -->
+          <swiper-item class="{{cardCur==index?'cur':''}}">
+            <view class="swiper-view" >
+              <image src="{{item.image}}"  mode="aspectFill" bindtap="previewImage"></image>
+            </view>
+          </swiper-item>
+        <!-- </navigator> -->
+      </block>
+    </swiper> 
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<!--pages/coach-box/coach-login/coach-login.wxml-->
+<view class="reg">
+	<view class="reg-m">
+		<p class="titlep">教练中心</p>
+		<view class="reg-m-ks">
+			<span>账号：</span>
+			<input type="text" placeholder="请输入账号" name="account" bindinput="getAccount" focus="true"></input>
+			<view class="clear"></view>
+		</view>
+		<view class="reg-m-ks">
+			<span>密码：</span>
+			<input placeholder="请输入密码" password="true" name="password" bindinput="getPwd" focus="true"></input>
+			<view class="clear"></view>
+		</view>
+		<button class="btnL" bindtap="coachLogin" form-type="submit">登录</button>
+	</view>
+</view>

@@ -1,0 +1,222 @@
+/* pages/course/course.wxss */
+page{
+  background-color: #fff;
+}
+.topbox { 
+  height: 520rpx;
+  background-color:#eee;
+  /* border-bottom-right-radius: 80rpx;
+  border-bottom-left-radius: 80rpx; */
+  /* border: 1px red solid; */
+}
+.search_box{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 110rpx;
+  background-color: #fff;
+  color:#ccc ;
+  /* border: 1px red solid;  */
+}
+.search{
+  width: 94%;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  border-radius: 5rpx;
+  background-color: #f7f8fa;
+}
+
+.banner {
+  box-shadow: 4rpx 4rpx 8rpx rgba(0, 0, 0, 0.3);
+   margin: 0 auto;
+  margin-top: 30rpx;
+  height: 350rpx;
+  /* height: calc(100vw * 258 / 619); */
+  width: 640rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.swiperCard{
+  width: 100%;
+  height: 100%;
+}
+ /* 分栏 */
+ .bottombox{
+  background-color: #fff;
+  padding-bottom: 20rpx;
+  height: auto;
+ }
+ .arti_box{
+  padding: 5rpx;
+  margin: 0 auto;
+  font-size: 13px;
+  width: 100%;
+  height: 210rpx;
+  } 
+ .arti_inside{
+  width: 100%;
+  height: 200rpx;
+  margin: 10rpx auto;
+  background-color: #f7f8fa;
+  border-radius: 10rpx;
+  width: 690rpx;
+  overflow: hidden;
+  box-shadow: 4rpx 4rpx 12rpx #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   }
+ .arcti_img{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 5%;
+  margin-left: 20rpx;
+ }
+ .arti_reg{
+  width: 520rpx;
+  margin: 0 20rpx;
+  text-overflow: ellipsis;
+ }
+ .arti_reg .title{
+   font-weight: 700;
+   display: block;
+   width: 95%;
+   font-size: 33rpx;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   word-break:break-all;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp:1;  /* 显示的行数 */
+
+ }
+ .arti_reg .content{
+  font-size: 24rpx;
+  margin: 10rpx auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break:break-all;
+-webkit-box-orient: vertical;
+-webkit-line-clamp:2; /* 显示的行数 */
+}
+.arti_reg .arti_bottom{
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 85rpx;
+}
+
+/* -----课程视频----- */
+/* .course_box{
+  border:1px blue solid;
+  height: 550rpx;
+  overflow: hidden;
+} */
+.course_box{
+  padding:0 10rpx;
+}
+.course{
+  float: left;
+  /* border:1px red solid; */
+  background-color: #eee;
+  height: 250rpx;
+  width: 320rpx;
+  padding: 15rpx;
+  margin:10rpx 0rpx 10rpx 10rpx;
+}
+.course .videoCourse{
+  width: 320rpx;
+  height: 200rpx;
+}
+.course .title{
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break:break-all;
+-webkit-box-orient: vertical;
+-webkit-line-clamp:2; /* 显示的行数 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ .card-dot {
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 50%;
+  border: 6rpx solid #3963bc;
+  margin-left: 26rpx;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 750rpx;
+  height: 100rpx;
+}
+
+.content-name {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(69, 82, 107, 1);
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+.card {
+  margin: 10rpx auto !important;
+}
+
+.right-card {
+  height: 180rpx !important;
+  width: 220rpx !important;
+  border-radius: 12rpx !important;
+}
+
+.avter-content {
+  margin-top: 10rpx;
+  color: #333;
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.avter-share-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.like-container{
+  display: flex;
+  flex-direction: row;
+  margin-left: 40rpx;
+  align-items: center
+}
+
+.number{
+  color: #666;
+  font-size: 24rpx;
+  margin-left: 12rpx;
+}

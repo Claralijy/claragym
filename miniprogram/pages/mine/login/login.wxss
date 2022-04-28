@@ -1,0 +1,60 @@
+page{
+  background-color: #fff;
+}
+.reg{width: 100%;border-top: 1px solid #eeeeee;padding-bottom: 50rpx; }
+.reg-m{width: 90%;margin: 0 auto;}
+.clear{clear: both;}
+.reg-m-k{width: 100%;border-bottom: 1px solid #eeeeee;padding-bottom: 10rpx;margin-top: 30rpx;}
+.reg-m-k span{width: 100%;font-size: 30rpx;color: #434343;line-height: 70rpx;display: inline-block;}
+.reg-m-k span label{color: red;}
+.reg-m-k input{width: 50%;float: left;font-size: 28rpx;height: 60rpx;line-height: 60rpx;}
+.reg-m-ks{width: 100%;margin-top: 30rpx;}
+.reg-m-ks span{width: 30%;font-size: 30rpx;color: #434343;line-height: 70rpx;float: left;text-align: right;}
+.reg-m-ks span label{color: red;}
+.reg-m-ks input{width: 50%;font-size: 28rpx;line-height: 60rpx;height: 60rpx;float: left;border-bottom: 1px solid #eeeeee;margin-left: 2%;}
+.btnL, .btnR{width: 35%;font-size: 30rpx;color: #fff;background: #19ad19b6;line-height: 80rpx;height: 80rpx;margin-top: 50rpx;display: inline-block;margin-left: 60rpx;}
+button::after{border: none;}
+.btnR{
+  background: #4395FF;
+}
+.btnR::hover{ background: #eee;}
+.titlep{width: 100%;text-align: center;display: inline-block;line-height: 250rpx;font-size: 40rpx;}
+.aplay{width: 80%;margin:20rpx auto;}
+.txt-link{display: inline-block;vertical-align: bottom}
+.txt-link text{font-size: 28rpx;color: #000;}
+.check label{margin-left: 50rpx;}
+.clickreg{
+  display: inline-block;
+  font-size: 28rpx;
+  color: blue;
+  margin:20rpx 110rpx;
+  text-decoration: underline;
+}
+.coach{
+  display: inline-block;
+  font-size: 28rpx;
+  margin:20rpx 50rpx;
+  text-decoration: underline;
+}
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  width: 30rpx;
+  height: 30rpx;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #1AAD19;
+  border-color:#1AAD19;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 30rpx;
+  height: 30rpx;  
+  line-height: 30rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

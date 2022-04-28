@@ -1,0 +1,28 @@
+/* pages/marketing/shopDetail/shopDetail.wxss */
+image{
+  width: 100%;
+}
+
+.cart{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  /* padding: 50rpx; */
+  background: blanchedalmond;
+}
+.cart .total{
+  margin-right: 25rpx;
+  margin-left: 30rpx;
+}
+.cart button{
+  color: #fff;
+  margin-right: 40rpx;
+  background-color:#98ca23;
+}

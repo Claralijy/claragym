@@ -1,0 +1,95 @@
+/* pages/personal/personal.wxss */
+
+.container{
+  background-color: #f6f6f6;
+  padding-bottom: 10rpx;
+  height: auto;
+}
+.load{
+  position: relative;
+  background-color:#ea986c;
+  height: 400rpx;
+  border-bottom-right-radius: 80rpx;
+  border-bottom-left-radius: 80rpx;
+  /*设置图片和文字垂直居中对齐*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.load image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.load text{
+  font-weight: 700;
+  margin-top: 25rpx;
+  color:white;
+}
+.exit{
+  position: absolute;
+  font-size: 28rpx;
+  text-decoration:underline ;
+  top: 0;
+  left: 20rpx;
+
+}
+.menu{
+  height:700rpx;
+  background-color: #fff;
+  margin: 50rpx 60rpx;
+  border-radius: 30rpx;
+
+}
+.menuTitle{
+  /* background-color: beige; */
+  /* border-bottom: 1px solid gainsboro; */
+  border-top-left-radius:30rpx ; 
+  border-top-right-radius:30rpx ;
+  font-size: 36rpx;
+  font-weight: 700;
+  padding: 28rpx 28rpx 28rpx 0;
+  height: 72rpx;
+  text-indent: 1em;
+}
+.menuTitle_text{
+  line-height: 80rpx;
+  width: 30%;
+  text-align: center;
+  border-left: 7px solid rgb(230, 228, 125);
+  float: left;
+  font-weight: 700;
+}
+.menuList{ 
+  margin: 0 auto;
+  width: 80%;
+  border-bottom: 1rpx solid gainsboro;
+}
+.li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.iconfont{
+  margin-right: 20rpx;
+}
+.menuList_text{
+  float: left;
+  width: 450rpx;
+}
+/*  去除button样式 */
+.menuList > button{
+  background-color: transparent;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+}
+.menuList > button::after{
+  border: none;
+}

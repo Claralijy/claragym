@@ -1,0 +1,85 @@
+/* miniprogram/pages/detailPage.wxss */
+.container{
+
+  font-size: 30rpx;
+  margin-bottom: 150rpx;
+}
+.head{
+  /* background-color: aquamarine; */
+  margin: 40rpx auto;
+  text-align: center;
+  border-bottom: 1rpx solid gainsboro;
+}
+.head .title{
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.head text{
+  display: inline-block;
+  margin:20rpx 30rpx;
+  color: rgb(133, 128, 128);
+}
+.cont{
+  /* background-color: #ccc; */
+  padding: 0 30rpx;
+  margin: 0 auto;
+}
+.cont .img_box{
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.cont .img{
+  /* border: 1px red solid; */
+  position: relative;
+  overflow: hidden;
+}
+.cont .tag{
+  position: absolute;
+  background-color: pink;
+  color: #fff;
+  top: 0;
+  right: 0;
+}
+.cont .content{
+  font-size: 30rpx;
+  text-indent: 2em;
+  line-height: 40rpx;
+  overflow: none;
+  height: auto;
+  width: 620rpx;
+  text-align: justify;   /* 文字两端对齐 */
+  margin: 0 auto;
+}
+/* 点赞等状态栏 */
+.cont .state{
+  text-align: right;
+ margin-top: 20rpx;
+}
+.selected{
+  color: red;
+}
+.state > i{
+ margin: 10rpx 15rpx;
+}
+.comment{
+  margin-top: 60rpx;
+}
+.comment textarea{
+  width: 95%;
+  height: 200rpx;
+  margin: 0 auto;
+  margin-bottom: 50rpx;
+  border: 1rpx solid #cccccc;
+}
+.comment button{
+  width: 50%;
+  background-color: rgba(255, 77, 77, 0.897);
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+}
+.comment_send{
+  border-top: 1rpx solid #ccc;
+  margin:60rpx auto 0;
+  width: 95%;
+}

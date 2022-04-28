@@ -1,0 +1,116 @@
+<!--pages/course/course.wxml-->
+<view class="topbox">
+<!-- ****搜索栏**** -->
+  <view class="search_box">
+    <view class="search" bindtap="searchArti">
+      <icon type="search" size="16"></icon>
+      请输入搜索关键词
+    </view>
+  </view>
+    <!-- ****swiper**** -->
+    <view class="banner">
+      <swiper class="swiperCard" indicator-dots circular autoplay interval="3000" duration="1000" indicator-color="#ccc" indicator-active-color="#ea986c"> 
+        <block wx:for="{{swiperList}}" wx:key="index">
+            <swiper-item>
+                <image style="width:100%;height:100%;border-radius: 10rpx;" src="{{item.image}}"  mode="aspectFill" show-menu-by-longpress="true"></image>
+            </swiper-item>
+        </block>
+      </swiper> 
+    </view>
+   
+</view>
+
+
+
+<view class="bottombox">
+ <van-tabs color="#ea986c" ellipsis="true" bind:change="onChange">
+      <van-tab title="热门文章" >  
+        <block wx:for="{{articleList}}" wx:key="index" >
+        <view class="arti_box" data-id="{{item._id}}" bindtap="artiDetail">
+              <view class="arti_inside">
+                <image class="arcti_img" src="{{item.avatar}}"></image>
+                <view class="arti_reg">
+                  <view class="title">{{item.title}}</view>
+                  <view class="content">{{item.profile}}</view>
+                  <view class="arti_bottom">
+                    <text class="tag">{{item.tag}}</text>
+                    <text class="view">{{item.view}}浏览</text>
+                    <text class="like">{{item.like}}点赞</text>
+                  </view>
+                  
+                </view>
+              </view>
+        </view>   
+        </block>
+      </van-tab>
+      <van-tab title="课程视频">
+        <block wx:for="{{courseList}}" wx:key="index" >
+          <view class="course_box">
+            <view class="course">
+              <video class="videoCourse" src="{{item.videoCourse}}" binderror="videoErrorCallback" enable-danmu danmu-btn controls></video>
+              <text class="title">{{item.videoName}}</text>    
+            </view>
+          </view>  
+        </block>
+      </van-tab>
+  </van-tabs> 
+</view> 
+
+
+<!-- ****navbar**** -->
+ <!-- <view>
+  <scroll-view scroll-x class="">
+  <view class="">
+    <view class="{{index==TabCur?'text-orange cur':''}}" wx:for="{{article}}" wx:key="navbar" bindtap="tabSelect" data-id="{{index}}">
+      {{item}}
+    </view>
+  </view>
+</scroll-view>
+    <block wx:if="{{TabCur == 0}}">
+    <view class="cu-list menu-avatar">
+      <block wx:for="{{bannerList}}" wx:key="banner">
+        <navigator url="../article/article" open-type="navigate" class="cu-item " >
+          <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big2100{{index+1}}.jpg);"></view>
+          <view class="content">
+              <view class="text-grey">{{item.title}}</view>
+              <view class="text-gray text-sm">
+                {{item.contents}}
+              </view>
+          </view>
+              <view class="action">
+                <view class="text-grey text-xs">22:20</view>
+              </view>
+        </navigator>
+    </block>
+    </view>
+
+
+    </block>
+
+    <block wx:if="{{TabCur == 1}}">
+      <navigator class="cu-bar bg-white solid-bottom" url="../article/article" open-type="navigate">
+          <view class="action">
+            <text class="cuIcon-title text-orange "></text> 
+            <view class="text-cut radius" style="width:120px">我于杀戮之中绽放 ,亦如黎明中的花朵</view>
+          </view>
+          <view class="action">
+            <view class="cu-tag round bg-orange light">{{item.tag}}</view>
+            <view class="cu-tag round bg-olive light">运动</view>
+            <view class="cu-tag round bg-blue light">娱乐</view>
+          </view>
+      </navigator>
+
+      <navigator class="cu-bar bg-white solid-bottom" url="../article/article" open-type="navigate">
+          <view class="action">
+            <text class="cuIcon-title text-orange "></text> 
+            <view class="text-cut radius" style="width:120px">我于杀戮之中绽放 ,亦如黎明中的花朵</view>
+          </view>
+          <view class="action">
+            <view class="cu-tag round bg-orange light">健身</view>
+            <view class="cu-tag round bg-olive light">运动</view>
+            <view class="cu-tag round bg-blue light">娱乐</view>
+          </view>
+      </navigator>
+  </block> 
+</view>  -->
+
